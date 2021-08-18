@@ -1,0 +1,114 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333 ;
+    --primary-color: #f94e2f;
+    --border-color:#DBDBDB;
+    --hover-color:#fceeee;
+
+    --header-height:120px;
+    --navbar-height:37px;
+    --header-with-search-height:calc(var(--header-height) - var(--navbar-height));
+}
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height:1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* RESPONSIDE */
+.grid{
+    width: 1200px;
+    max-width:100%;
+    margin:0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes faceIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes growth{
+    from{
+       transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to))
+    }
+}
+/* Modal layout */
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display:flex;
+}
+.modal__overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    animation: faceIn linear 0.1s;
+}
+.modal__body{
+    --growth-from:0.6;
+    --growth-to:1;
+    width: 500px;
+    margin:auto;
+    z-index: 1;
+    animation: growth linear 0.1s;
+}
+
+/* button style */
+.btn{
+    min-width: 124px;
+    height:34px;
+    text-decoration: none;
+    border:none;
+    border-radius:2px;
+    font-size: 1.4rem;
+    padding: 0 8px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+
+}
+.btn.btn--normal:hover{
+     background-color:rgba(0,0,0,0.2);
+}
+.btn.btn--primary{
+    color:var(--white-color);
+    background-color: var(--primary-color);
+    border-style: none;
+}
+.btn.btn--disabled{
+    color: rgb(145, 138, 138);
+    cursor:default;
+    background-color: rgb(177, 174, 174);
+}
