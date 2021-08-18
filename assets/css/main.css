@@ -6,6 +6,7 @@
 .header__navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__navbar-list{
@@ -19,6 +20,81 @@
     position: relative;
 }
 
+/* Tài khoản */
+.header__navbar-user{
+    display: flex;
+    justify-content:center;
+    position: relative;
+    min-width: 126px;
+}
+.header__navbar-user-name{
+    padding-left: 28px;
+    font-weight: 400;
+}
+
+.header__navbar-user:hover .header__navbar-user-menu{
+    display:block;
+}
+
+.header__navbar-user-img{
+    width:22px;
+    height:22px;
+    border-radius: 50%;
+    position:absolute;
+    top:-4px;
+    border:1px solid rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+.header__navbar-user-menu{
+    position: absolute;
+    padding:8px 0;
+    width: 160px;
+    top: calc( 100% + 8px);
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    list-style: none;
+    display:none;
+    animation: faceIn ease-in 0.2s;
+    border: 1px solid var(--border-color);
+}
+.header__navbar-user-menu::after{
+    content:"";
+    display: block;
+    position: absolute;
+    right:0;
+    top: -12px;
+    width: 78%;
+    height: 20px;
+}
+.header__navbar-user-menu::before{
+    content:"";
+    position: absolute;
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    right: 85px;
+    top: -28px;
+}
+.header__navbar-user-item{
+    padding:0 16px;
+}
+
+.header__navbar-user-item-separate{
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.header__navbar-user-item:hover{
+    background-color: var(--hover-color);
+}
+.header__navbar-user-item a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    display: block;
+    padding:6px 0;
+}
+
 .header__navbar-item,
 .header__navbar-item-link
 {
@@ -27,7 +103,6 @@
     color: var(--white-color);
     text-decoration:none;
     font-weight: 300;
-
 }
 
 
@@ -68,6 +143,7 @@
     color: var(--white-color);
     text-decoration: none;
     cursor: pointer;
+
 }
 
 .header__navbar-icon{
@@ -82,6 +158,7 @@
 
 .header__navbar-icon.fa-facebook-square{
     color:aqua;
+    margin-left: 7px;
 }
 .header__navbar-icon.fa-facebook-square:hover{
     color:#1a73ea;
@@ -98,6 +175,7 @@
     border-radius: 2px;
     display:none;
     animation: faceIn ease-in 0.3s;
+    z-index: 1;
 }
 
 .header__qr::before{
@@ -134,11 +212,12 @@
     top: 150%;
     right: 0;
     width: 404px;
+    border-radius: 2px;
     background-color:var(--white-color);
     border:1px solid #D3D3D3;
     cursor: default;
     animation: headerNotifyGrow ease 0.2s;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 32px) top;
     display: none;
     will-change: opacity,transform;
 }
@@ -375,7 +454,10 @@
     width: 200px;
     margin-right: 62px;
 }
-
+.header__logo-link{
+    color:transparent;
+    text-decoration: none;
+}
 .header__search{
     background-color: var(--white-color);
     height:42px;
