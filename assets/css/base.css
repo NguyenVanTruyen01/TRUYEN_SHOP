@@ -168,6 +168,7 @@ html{
     list-style: none;
     text-align: center;
     display: none;
+    z-index: 1;
 }
 
 .select-input-list::after{
@@ -188,4 +189,40 @@ html{
 }
 .select-input_link:hover{
     color: var(--primary-color);
+}
+/* pagination */
+.pagination{
+    display:flex;
+    font-size:1.5rem;
+    list-style: none;
+    justify-content:center;
+    border-radius: 2px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+}
+.pagination-item{
+    background-color: var(--white-color);
+    text-align: center;
+    border-left: 1px solid rgb(245, 236, 236);
+}
+.pagination-item:first-child{
+    border:none;
+}
+.pagination-item_link{
+    --line-height: 30px;
+    display:block;
+    text-decoration: none;
+    min-width: 40px;
+    height:var(--line-height);
+    line-height:var(--line-height);
+    color: var(--text-color);
+    text-align: center;
+    font-weight: 300;
+}
+
+.pagination-item_link.pagination-item_link-select{
+    color:var(--white-color);
+    background-color: var(--primary-color);
+}
+.pagination-item_link.pagination-item_link-select:hover{
+    background-color: #ed5c3f;
+
 }
