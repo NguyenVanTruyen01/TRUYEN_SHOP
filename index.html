@@ -126,6 +126,12 @@
                 </nav>
                 <!-- Header with search -->
                 <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+                    
+                    <input  type="checkbox" hidden name="" id="mobile-search-checkbox" class ="header__search-checkbox">
+                    
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -136,7 +142,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="header__search">
+                    <div class="header__search ">
                         <div class="header__search-search-wrap">
                             <input type="text" class="header__search-search" placeholder="Tìm trong shop này">
                             <!-- Search History -->
@@ -369,13 +375,26 @@
                     </div>
                 </div>
             </div>
-            
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item  header__sort-link-active">
+                    <a href="" class="header__sort-link ">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
         </header>
 
         <div class="app_container">
             <div class="grid wide">
-                <div class="grid__row app_content">
-                    <div class="grid__column-2">
+                <div class="row sm-gutter app_content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category_heading">
                                 Danh mục
@@ -391,7 +410,7 @@
                                         Trang điểm môi
                                     </a>
                                 </li>
-                                <li class="category-item">
+                                <li class ="category-item">
                                     <a href="#" class="category-item_link">
                                         Trang điểm mắt
                                     </a>
@@ -400,7 +419,7 @@
                         </nav>
                     </div>
     
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                             <div class="home-filter hide-on-mobile-tablet">
                                 <spam class="home-filter-label">Sắp xếp theo</spam>
                                 <button class="home-filter_btn btn">Phổ biến</button>
@@ -438,8 +457,8 @@
 
                             <div class="home-product">
                                 <!-- Grid -> Row -> Column -->
-                                <div class="grid__row">
-                                    <div class="grid__column-2-4">
+                                <div class="row sm-gutter">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -483,7 +502,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -527,7 +546,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -571,7 +590,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -615,7 +634,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -659,7 +678,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -703,7 +722,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -747,7 +766,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -791,7 +810,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -835,7 +854,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -879,7 +898,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -923,7 +942,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -967,7 +986,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -1011,7 +1030,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -1055,7 +1074,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -1099,7 +1118,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -1143,7 +1162,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -1187,7 +1206,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -1231,7 +1250,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -1275,7 +1294,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -1319,7 +1338,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -1363,7 +1382,7 @@
                                             </div>
                                         </a>   
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a href="a" class="home-product-item">
                                             <div class="home-product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/16/1375555/7_1280x720-800-resize.jpg);"></div>
                                             <h4 class="home-product-item-name">
@@ -1468,9 +1487,9 @@
 
         <footer class="footer">
             <div class="grid wide">
-                <div class="grid__row"> 
+                <div class="row"> 
 
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -1484,7 +1503,7 @@
                             </li>
                         </ul>
                     </div>   
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Giới thiệu</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -1499,7 +1518,7 @@
                             </li>
                         </ul>
                     </div> 
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Danh muc</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -1514,7 +1533,7 @@
                             </li>
                         </ul>
                     </div> 
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Theo dõi</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -1538,7 +1557,7 @@
                             </li>
                         </ul>
                     </div> 
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__download">
                             <img src="/assets/img/QR_code.png" alt="Download QR" class="footer__download-qr">

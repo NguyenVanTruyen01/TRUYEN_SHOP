@@ -7,6 +7,7 @@
     --hover-color:#f0e5e5;
     --star-gold-color: yellow;
 
+    --header-sortBar-height : 46px;
     --header-height:120px;
     --navbar-height:37px;
     --header-with-search-height:calc(var(--header-height) - var(--navbar-height));
