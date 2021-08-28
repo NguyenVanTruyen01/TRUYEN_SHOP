@@ -92,5 +92,25 @@
         --line-height: 28px;
         min-width: 30px;
     }
-
+    .app_content{
+        padding-top: 0;
+    }
+    .footer__content{
+        padding: 0 16px;
+    }
+    .footer__heading{
+       text-align: center; 
+    }
+    .footer__list {
+        text-align: center
+    }
+    .footer__download-app{
+        flex:unset;
+    }
+    .footer__download{
+        justify-content: center;
+    }
+    .footer__download-app-link{
+        padding: 8px 8px;
+    }
 }
